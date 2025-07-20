@@ -1,0 +1,13 @@
+import random as rn
+number=int(rn.random()*100)+1
+count=0
+while(True):
+    k=int(input())
+    count+=1
+    if(k<number):
+        print("Number is too low")
+    elif(k>number):
+        print("Number is too high")
+    else:
+        print("Congratulations!\nyou guess it in",count,"attempt")
+        break
